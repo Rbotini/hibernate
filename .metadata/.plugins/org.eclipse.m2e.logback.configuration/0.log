@@ -204,3 +204,4 @@
 2022-01-21 14:38:36,533 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-01-21 14:38:36,533 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\renato.botini\Desktop\hibernate\hibernate-project\src\main\resources
 2022-01-21 14:38:36,534 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-01-21 14:38:36,534 [Worker-64: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\renato.botini\Desktop\hibernate\hibernate-project\src\test\resources
