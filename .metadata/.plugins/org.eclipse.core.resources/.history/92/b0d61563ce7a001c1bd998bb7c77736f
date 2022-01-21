@@ -1,0 +1,42 @@
+package com.botidev_hibernate.hibernate_project;
+
+import java.lang.module.Configuration;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	
+    	// configurar o arquivo para receber os parametros de conexao com o banco
+    	
+    	org.hibernate.cfg.Configuration configuration = new org.hibernate.cfg.Configuration();
+    	configuration.configure("hibernate.cfg.xml");
+    	configuration.addAnnotatedClass(Song.class);
+    	
+    	SessionFactory sessionFactory = configuration.buildSessionFactory();
+        
+    	Session session = sessionFactory.openSession();
+    	
+    	
+    	Song s2 = new Song();
+    	s2.setId(2);
+    	s2.setSongName("Batom de Cereja");
+    	s2.setArtista("Israel & Rodolfo");
+    	
+    	session.beginTransaction();
+    	session.save(s2);
+    	session.getTransaction().commit();
+    	session.close();
+    	
+    	System.out.println("Salvando os dados");
+    	
+    	
+    }
+}

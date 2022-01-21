@@ -1,0 +1,5 @@
+package com.botidev_hibernate.hibernate_project;
+
+public class Song {
+
+}

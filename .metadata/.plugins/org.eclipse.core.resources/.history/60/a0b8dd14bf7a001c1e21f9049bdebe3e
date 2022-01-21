@@ -1,0 +1,29 @@
+package com.botidev_hibernate.hibernate_project;
+
+import java.lang.module.Configuration;
+
+import org.hibernate.Session;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	
+        
+    	Session session = null;
+    	
+    	
+    	Song s1 = new Song();
+    	s1.setId(1);
+    	s1.setSongName("Pisadinha");
+    	s1.setArtista("Baraão da Pisadinha");
+    	
+    	session.save(s1);
+    	
+    	
+    }
+}
